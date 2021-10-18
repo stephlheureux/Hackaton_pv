@@ -1,0 +1,25 @@
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+hello world
+<a href="monfichier.html" target_="_blank" >mon texte surligné</a>
+<a href="http://yahoo.com" target="_blank">test</a>
+<SCRIPT TYPE="text/javascript">
+  function popup(mylink, windowname) {
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href;
+    window.open(href, windowname, 'width=700,height=641,scrollbars=no');
+    return false;
+  }
+</SCRIPT>
+
+<BODY onLoad="popup('popup1.html', 'ad')">
+
+</html>
